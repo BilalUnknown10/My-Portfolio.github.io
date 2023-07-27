@@ -1,0 +1,186 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Oswald:wght@300;400&display=swap');
+body{
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;margin: 0px;
+    padding: 0px;
+     background-color: rgb(110, 216, 216);
+}
+
+#header_section{
+    background-color: rgb(187, 223, 187);
+    user-select: none;
+    /* width: 100%; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    /* width: 100%; */
+}
+
+#menu{
+    display: none;
+}
+.main_div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.image{
+    margin-right: 1rem;
+}
+.image img{
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+.navbar nav a{
+ text-decoration: none;
+ color: black;
+ padding: 0 10px 0 0;
+}
+
+.main_content{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+    user-select: none;
+}
+
+.main_image img{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+}
+
+.about_us{
+    text-align: center;
+    /* background-color: aquamarine; */
+     background-color: rgb(175, 175, 228);
+     padding: 2rem 0 2rem 0;
+     user-select: none;
+    /* width: 50rem; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid red; */
+}
+
+.paragraph{
+      /* border: 1px solid red; */
+      margin: 3rem 15rem 3rem 15rem;
+       /* background-color: rgb(175, 175, 228); */
+}
+
+.paragraph p{
+    line-height: 2rem;
+    /* letter-spacing: 0.1rem; */
+    padding: 0 5rem 0rem 5rem;
+    border-radius: 2rem;
+    background-color: rgb(135, 135, 160);
+}
+
+#contact_us{
+     background-color: rgb(202, 115, 115);
+     color: rgb(0, 0, 0);
+     min-height:5rem;
+     text-align: center;
+     letter-spacing: 2px;
+     font-size: medium;
+} 
+
+
+#contact_us h4{
+    padding-top: 1rem;
+}
+.contact_us{
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 420px){
+    .contact_us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact_us div{
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main_content{
+        flex-direction: column;
+    }
+
+    .main_image img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+    .about_us{
+    text-align: center;
+     background-color: rgb(175, 175, 228);
+     padding: 2rem 0 2rem 0;
+     user-select: none;
+   
+}
+
+.paragraph{
+     
+      margin: 1rem 0rem 1rem 0rem;
+      
+}
+
+.paragraph p{
+    line-height: 2rem;
+    padding: 0 5rem 0rem 5rem;
+    border-radius: 2rem;
+    background-color: rgb(135, 135, 160);
+}
+}
+
+@media screen and (max-width : 550px) {
+    #menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar nav{
+        display: none;
+    }
+
+}
+
+.navigation{
+    position: relative;
+}
+.navbar2 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: -1.2rem;
+    width: 5rem;
+}
+
+.navbar2 nav a{
+ margin: 0.2rem 0;
+}
