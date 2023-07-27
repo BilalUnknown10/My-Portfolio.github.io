@@ -97,6 +97,7 @@ header{
      text-align: center;
      letter-spacing: 2px;
      font-size: medium;
+     user-select: none;
 } 
 
 
